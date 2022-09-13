@@ -1,0 +1,64 @@
+.formContainer{
+    padding-top: 100px;
+    .formWrapper{
+        width: 770px;
+        margin: 0 auto;
+        background-color: #e6e2d3;
+        padding: 30px;
+        .userInformation{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            align-items: center;
+            margin-bottom: 10px;
+            .description{
+                font-size: 17px;
+                font-weight: 100;
+            }
+            .inputWrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .inputWrapperAdress{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+            }
+            .userInformationInput{
+                border: none;
+                padding: 10px;
+            }
+            .clubsList{
+                border: none;
+                padding: 10px;
+                font-weight: 100;
+            }
+        }
+        .buttonWrapper {
+            border-top: 1px solid #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin-top: 20px;
+    
+            .sendBtn {
+                border: 1px solid #048AD7;
+                padding: 10px 20px;
+                margin-top: 15px;
+                font-size: 15px;
+                background-color: Transparent;
+                color: #048AD7;
+                border-radius: 10px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
+            .sendBtn:hover {
+                background-color: #048AD7;
+                color: #fff;
+            }
+            .logo{
+                width: 100%;
+            }
+        }
+    }
+}
