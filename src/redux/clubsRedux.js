@@ -13,7 +13,6 @@ const ERROR_REQUEST = createActionName('ERROR_REQUEST');
 
 const LOAD_CLUBS= createActionName('LOAD_CLUBS');
 
-
 export const startRequest = () => ({type: START_REQUEST});
 export const endRequest = () => ({type: END_REQUEST});
 export const errorRequest = payload => ({payload, type: ERROR_REQUEST});

@@ -18,19 +18,18 @@ export const errorRequest = payload => ({ payload, type: ERROR_REQUEST });
 
 export const addNewUserRequest = (user) => {
   return async dispatch => {
-    dispatch(startRequest({ name: 'ADD_NEWUSER' }));
+    dispatch(startRequest({ name: 'START_REQUEST' }));
     try {
-
       await axios.post(`https://demo.testing1.perfectgym.pl/Api/v2/Members/AddGuestMember`, user, {
         headers : {
             'X-Client-Id': 'e3de9964426448ecbe856d7c2a1e7f0f',
             'X-Client-Secret': '02942f4de1274d118a97bae951c1fe1732837151ef0840a6a6ab0611958fc9dc'
         }
       });
-      dispatch(endRequest({ name: 'ADD_NEWUSER' }));
+      dispatch(endRequest({ name: 'END_REQUEST' }));
 
     } catch(e) {
-      dispatch(errorRequest({ name: 'ADD_NEWUSER', error: e.message }));
+      dispatch(errorRequest({ name: 'ERROR_REQUEST', error: e.message }));
     }
   };
 };
