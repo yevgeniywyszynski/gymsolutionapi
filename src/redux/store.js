@@ -9,7 +9,7 @@ const initalState = {
         lastName: '',
         homeClubId: '',
         additionalAddressLine: '',
-        response: {}
+        request: {}
     },
     clubs: {
         request:{

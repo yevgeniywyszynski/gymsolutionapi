@@ -1,4 +1,7 @@
 import axios from 'axios';
+import db from '../db/db.json' 
+
+export const getAllClubsId = ({clubs}) => clubs.data.map(e=>e.id)
 
 const reducerName = 'clubs'
 
@@ -32,6 +35,8 @@ export const loadAllClubsRequest = () => {
             dispatch(endRequest())
         } catch(e) {
             console.log(e)
+            console.log("There was error while loading data. Using volkswagen mode.")
+            dispatch(loadClubs(db.value))
             dispatch(errorRequest({name: 'ERROR_REQUEST', error: 'could not fetch data'}));
         }
     }
