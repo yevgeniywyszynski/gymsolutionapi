@@ -3,4 +3,4 @@ GUI that can add a GUEST MEMBER TO A CLUB through API (AddGuestMember endpoint -
 - focus on the required fields only - firstName, lastName, homeClubId and additionalAddressLine
 - there is on dependant *required* field (homeClubId) that you have to query data from the other endpoint in order to get the valid options to choose from
 
-<img src='/img/loginForm.png'/>
+<img src='/public/img/loginForm.png'/>
